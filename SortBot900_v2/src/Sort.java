@@ -13,6 +13,5 @@ public class Sort {
 		}
 	}
 
-	public Sort() {
-	}
+	public Sort() {}
 }
