@@ -6,3 +6,4 @@ A simple java super computer AI that will destroy the world with it's sorting al
 
 ## TODO ## 
 - String to int[]
+- Sort viewer: displays the built array
