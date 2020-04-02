@@ -30,6 +30,8 @@ public class Window extends JFrame {
 	// FONTS
 	Font f2 = new Font(Font.MONOSPACED, Font.BOLD, 25);
 	Font f1 = new Font(Font.DIALOG_INPUT, Font.PLAIN, 11);
+	
+	static DrawingComponent d1 = new DrawingComponent();
 
 	public Window() {
 
@@ -80,10 +82,12 @@ public class Window extends JFrame {
 		strBtn.setBackground(new Color(50, 50, 50));
 		strBtn.setBorder(blackline);
 		add(strBtn);
-
+		
 		// ACTIONLISTNERS
 		inputTxt.addActionListener((e) -> getTxt());
 		strBtn.addActionListener((e) -> sortViewer());
+		
+		//DECORATIONS
 
 	}
 
@@ -105,9 +109,10 @@ public class Window extends JFrame {
 		String input = inputTxt.getText();
 		inputTxt.setText("");
 		outputTxt.append(input + "\n");
+		if(input.equalsIgnoreCase("random")) 	randomSort(); 
 		if(input.equalsIgnoreCase("view")) 		sortViewer();
 		if(input.equalsIgnoreCase("build")) 	arrayBuilder();
-		if(input.equalsIgnoreCase("sort")) 		sort();
+		if(input.equalsIgnoreCase("sort")) 		sort(); d1.repaint();
 		if(input.equalsIgnoreCase(st1)) 		existentalCrisis();
 		if(input.equalsIgnoreCase(st2)) 		greetings();
 		if(input.equalsIgnoreCase(st3)) 		existentalCrisis2();
@@ -128,6 +133,7 @@ public class Window extends JFrame {
 	}
 	*/
 	
+	@SuppressWarnings("unused")
 	private void sort() {
 		Sort.insertion(a, 0, 9);
 		
@@ -138,12 +144,12 @@ public class Window extends JFrame {
 
 		
 	}
+
 	
 	private void sortViewer() {
-		//TODO: DRAW STUFF THAT MOVES AROUND
 		if(v1.isVisible()) return;
-		add(v1);
 		v1.setVisible(true);
+		v1.getContentPane().add(d1);
 	}
 
 	private void existentalCrisis(){
@@ -163,5 +169,6 @@ public class Window extends JFrame {
 		ArrayGenerator.generate();
 
 	}
+	
 
 }

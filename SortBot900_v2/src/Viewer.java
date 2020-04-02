@@ -1,55 +1,171 @@
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
-
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
 
-public class Viewer extends JPanel {
-	
+@SuppressWarnings("serial")
+public class Viewer extends JFrame {
+
 	// SWING COMPONENTS
 	public JPanel contentPaneB;
-	private JLabel titleLbl;
-	
-	// DECORATIONS
+	private JLabel titleLbl, xaxis, yaxis, placeholder, xaxislbl, underscore,underscore2;
+	private JLabel v1, v2, v3, v4, v5, v6, v7, v8, v9, v10;
+
+	// COLOR
 	Color ylw = new Color(230, 221, 91);
+	Color blk = new Color(50, 50, 50);
+
+	// BORDER
 	Border blackline = BorderFactory.createLineBorder(ylw);
-	Font f2 = new Font(Font.MONOSPACED, Font.BOLD, 12);
-	
+
+	// FONT
+	Font f2 = new Font(Font.MONOSPACED, Font.BOLD, 14);
+	Font f3 = new Font(Font.MONOSPACED, Font.BOLD, 8);
+	Font f4 = new Font(Font.MONOSPACED, Font.BOLD, 11);
+
 	public Viewer() {
-		
+
 		// WINDOW CONFIGURATIONS
-		//setTitle("SortViewer");
-		setSize(300,300);
-		setLocation(500,380);
-		//setUndecorated(true);
-		//setResizable(true);
-		setLayout(null);
+		setTitle("Sort Viewer");
+		setSize(300, 300);
+		// setLayout(null);
+		setLocation(500, 380);
+		setUndecorated(true);
 		setFocusable(true);
-		
-		// STUPID CONTENTPANES
-		contentPaneB = new JPanel();
-		//setContentPane(contentPaneB);
-		contentPaneB.setLayout(null);
-		contentPaneB.setBackground(new Color(50,50,50));
-		
-		// NAME?!?
+
+		// STUPID CONTENTPANES FORGETT THIS
+		// contentPaneB = new JPanel();
+		// setContentPane(contentPaneB);
+		// contentPaneB.setLayout(null);
+		// contentPaneB.setBackground(new Color(50,50,50));
+
+		// TITLE LABEL
 		titleLbl = new JLabel("Welcome to Sort Viewer");
 		titleLbl.setForeground(ylw);
 		titleLbl.setFont(f2);
-		titleLbl.setBounds(10,5,200,12);
+		titleLbl.setBounds(59, 25, 200, 14);
 		add(titleLbl);
+
+		// UNDERSCORE
+		underscore = new JLabel("======================");
+		underscore.setForeground(ylw);
+		underscore.setFont(f2);
+		underscore.setBounds(59, 35, 200, 14);
+		add(underscore);
+
+		// UNDERSCORE
 		
-		
+		underscore2 = new JLabel("======================");
+		underscore2.setForeground(ylw);
+		underscore2.setFont(f2);
+		underscore2.setBounds(59, 15, 200, 14);
+		add(underscore2);
+
+		// X AXIS
+		xaxis = new JLabel("0 1 2 3 4 5 6 7 8 9 10");
+		xaxis.setForeground(ylw);
+		xaxis.setFont(f3);
+		xaxis.setBounds(75, 197, 200, 20);
+		add(xaxis);
+
+		// X AXIS LABEL
+		xaxislbl = new JLabel("ARRAY ELEMNTS");
+		xaxislbl.setForeground(ylw);
+		xaxislbl.setFont(f4);
+		xaxislbl.setBounds(85, 208, 200, 20);
+		add(xaxislbl);
+
+		// Y AXIS
+		yaxis = new JLabel("VALUE");
+		yaxis.setBounds(189, 90, 100, 20);
+		yaxis.setForeground(ylw);
+		yaxis.setFont(f4);
+		add(yaxis);
+
+		// VALUE LABELS
+		v1 = new JLabel("1");
+		v1.setForeground(ylw);
+		v1.setFont(f3);
+		v1.setBounds(200, 174 + 14, 20, 20);
+		add(v1);
+
+		v2 = new JLabel("2");
+		v2.setForeground(ylw);
+		v2.setFont(f3);
+		v2.setBounds(200, 166 + 13, 20, 20);
+		add(v2);
+
+		v3 = new JLabel("3");
+		v3.setForeground(ylw);
+		v3.setFont(f3);
+		v3.setBounds(200, 158 + 12, 20, 20);
+		add(v3);
+
+		v4 = new JLabel("4");
+		v4.setForeground(ylw);
+		v4.setFont(f3);
+		v4.setBounds(200, 150 + 11, 20, 20);
+		add(v4);
+
+		v5 = new JLabel("5");
+		v5.setForeground(ylw);
+		v5.setFont(f3);
+		v5.setBounds(200, 142 + 10, 20, 20);
+		add(v5);
+
+		v6 = new JLabel("6");
+		v6.setForeground(ylw);
+		v6.setFont(f3);
+		v6.setBounds(200, 134 + 9, 20, 20);
+		add(v6);
+
+		v7 = new JLabel("7");
+		v7.setForeground(ylw);
+		v7.setFont(f3);
+		v7.setBounds(200, 126 + 8, 20, 20);
+		add(v7);
+
+		v8 = new JLabel("8");
+		v8.setForeground(ylw);
+		v8.setFont(f3);
+		v8.setBounds(200, 118 + 7, 20, 20);
+		add(v8);
+
+		v9 = new JLabel("9");
+		v9.setForeground(ylw);
+		v9.setFont(f3);
+		v9.setBounds(200, 110 + 6, 20, 20);
+		add(v9);
+
+		v10 = new JLabel("10");
+		v10.setForeground(ylw);
+		v10.setFont(f3);
+		v10.setBounds(200, 102 + 2, 20, 20);
+		add(v10);
+
+		// PLACEHOLDER
+		placeholder = new JLabel("");
+		placeholder.setBounds(0, 0, 0, 0);
+		add(placeholder);
+
+		// TESTING
+		//testArray();
+
+		// DECORATIONS & CONTENTPANE
+		getContentPane().setBackground(blk);
+		getContentPane().add(new DrawingComponent());
+
 	}
-	
-	protected void paintComponent(Graphics g) {
-	      super.paintComponent(g);
-	      // draw the rectangle here
-	      g.drawRect(0,10, 5, 10);
-	   }
-	
+
+	@SuppressWarnings("unused")
+	private void testArray() {
+		// USED TO TEST ARRAYS
+		for (int i = 0; i < Window.a.length; i++) {
+			Window.a[i] = i;
+		}
+	}
+
 }
