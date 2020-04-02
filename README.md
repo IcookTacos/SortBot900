@@ -15,7 +15,7 @@ Feel pretty much finished with the project so far. Could add more sorting algori
 
 
 ## COMMANDS ##
-- build
+-build
 opens the array builder, lets you input numbers from -1 to 10 and create an array of size 10
 
 -e
