@@ -14,21 +14,27 @@ public class DrawingComponent extends Component {
 	
 	// COLOR
 	Color ylw = new Color(230, 221, 91);
+	Color blk = new Color(50, 50, 50);
 	// DIMENSIONS
-	int y = 200, WIDTH = 15;
+	int y = 100, WIDTH = 6;
 	
 	public DrawingComponent() {}
 	public void paint(Graphics g) {
-
-		int increment = 0;
-
 		// DRAWING ARRAY
+		
 		for (int i = 0; i < Window.a.length; i++) {
 			Graphics2D g2 = (Graphics2D) g;
 			g.setColor(ylw);
-			g.fillRect(80 + i * 10, y, WIDTH, 1 - (Window.a[i] * 10));
+			g.fillRect(75 + i * 10, ((10-Window.a[i])*10)+99, WIDTH,11-(10-Window.a[i]*10));
+			
 		}
+		
 
+		
+	}
+	
+	public void debugg() {
+		System.out.print("SORTING\n");
 	}
 	
 	

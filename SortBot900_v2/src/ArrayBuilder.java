@@ -79,7 +79,6 @@ public class ArrayBuilder extends JFrame  {
 		String input = txtInput.getText();
 		txtInput.setText("");
 		String output = "";
-		
 		//TODO: FIX THIS SHIT, DON'T BE SO STUPID
 		//TODO: om input = 10 8 2 3 9 8 1 1 0 -1
 		//TODO: STRING -> INT ARRAY[]

@@ -31,8 +31,8 @@ public class Window extends JFrame {
 	Font f2 = new Font(Font.MONOSPACED, Font.BOLD, 25);
 	Font f1 = new Font(Font.DIALOG_INPUT, Font.PLAIN, 11);
 	
-	static DrawingComponent d1 = new DrawingComponent();
-
+	static DrawingComponent dC = new DrawingComponent();
+	
 	public Window() {
 
 		// WINDOW CONFIGURATIONS
@@ -112,7 +112,7 @@ public class Window extends JFrame {
 		if(input.equalsIgnoreCase("random")) 	randomSort(); 
 		if(input.equalsIgnoreCase("view")) 		sortViewer();
 		if(input.equalsIgnoreCase("build")) 	arrayBuilder();
-		if(input.equalsIgnoreCase("sort")) 		sort(); d1.repaint();
+		if(input.equalsIgnoreCase("sort")) 		sortCall(dC); dC.repaint();
 		if(input.equalsIgnoreCase(st1)) 		existentalCrisis();
 		if(input.equalsIgnoreCase(st2)) 		greetings();
 		if(input.equalsIgnoreCase(st3)) 		existentalCrisis2();
@@ -133,10 +133,11 @@ public class Window extends JFrame {
 	}
 	*/
 	
-	@SuppressWarnings("unused")
-	private void sort() {
-		Sort.insertion(a, 0, 9);
+	
+	private void sortCall(DrawingComponent dC) {
 		
+		Sort sort = new Sort(dC, a, 0, 9);
+		sort.insertion();
 		for(int i = 0;i<10;i++) {
 			outputTxt.append(Integer.toString(a[i])+" ");
 		}
@@ -149,7 +150,7 @@ public class Window extends JFrame {
 	private void sortViewer() {
 		if(v1.isVisible()) return;
 		v1.setVisible(true);
-		v1.getContentPane().add(d1);
+		v1.getContentPane().add(dC);
 	}
 
 	private void existentalCrisis(){
