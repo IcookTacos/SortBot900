@@ -22,9 +22,9 @@ public class ArrayGenerator {
 		System.out.println("\n");
 		
 
-		Sort.insertion(a, 0, 9);
+		//sort.insertion(a, 0, 9);
 		System.out.println("AFTER SORT");
-		Sort.insertion(a, 0, 9);
+		//sort.insertion(a, 0, 9);
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i]);
 		}

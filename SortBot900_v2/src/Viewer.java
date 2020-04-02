@@ -31,8 +31,9 @@ public class Viewer extends JFrame {
 		// WINDOW CONFIGURATIONS
 		setTitle("Sort Viewer");
 		setSize(300, 300);
-		// setLayout(null);
+		//setLayout(null);
 		setLocation(500, 380);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setUndecorated(true);
 		setFocusable(true);
 
@@ -46,14 +47,14 @@ public class Viewer extends JFrame {
 		titleLbl = new JLabel("Welcome to Sort Viewer");
 		titleLbl.setForeground(ylw);
 		titleLbl.setFont(f2);
-		titleLbl.setBounds(59, 25, 200, 14);
+		titleLbl.setBounds(50, 25, 200, 14);
 		add(titleLbl);
 
 		// UNDERSCORE
 		underscore = new JLabel("======================");
 		underscore.setForeground(ylw);
 		underscore.setFont(f2);
-		underscore.setBounds(59, 35, 200, 14);
+		underscore.setBounds(50, 35, 200, 14);
 		add(underscore);
 
 		// UNDERSCORE
@@ -61,11 +62,11 @@ public class Viewer extends JFrame {
 		underscore2 = new JLabel("======================");
 		underscore2.setForeground(ylw);
 		underscore2.setFont(f2);
-		underscore2.setBounds(59, 15, 200, 14);
+		underscore2.setBounds(50, 15, 200, 14);
 		add(underscore2);
 
 		// X AXIS
-		xaxis = new JLabel("0 1 2 3 4 5 6 7 8 9 10");
+		xaxis = new JLabel("0 1 2 3 4 5 6 7 8 9");
 		xaxis.setForeground(ylw);
 		xaxis.setFont(f3);
 		xaxis.setBounds(75, 197, 200, 20);
@@ -80,7 +81,7 @@ public class Viewer extends JFrame {
 
 		// Y AXIS
 		yaxis = new JLabel("VALUE");
-		yaxis.setBounds(189, 90, 100, 20);
+		yaxis.setBounds(175, 90, 100, 20);
 		yaxis.setForeground(ylw);
 		yaxis.setFont(f4);
 		add(yaxis);
@@ -89,61 +90,61 @@ public class Viewer extends JFrame {
 		v1 = new JLabel("1");
 		v1.setForeground(ylw);
 		v1.setFont(f3);
-		v1.setBounds(200, 174 + 14, 20, 20);
+		v1.setBounds(180, 174 + 14, 20, 20);
 		add(v1);
 
 		v2 = new JLabel("2");
 		v2.setForeground(ylw);
 		v2.setFont(f3);
-		v2.setBounds(200, 166 + 13, 20, 20);
+		v2.setBounds(180, 166 + 13, 20, 20);
 		add(v2);
 
 		v3 = new JLabel("3");
 		v3.setForeground(ylw);
 		v3.setFont(f3);
-		v3.setBounds(200, 158 + 12, 20, 20);
+		v3.setBounds(180, 158 + 12, 20, 20);
 		add(v3);
 
 		v4 = new JLabel("4");
 		v4.setForeground(ylw);
 		v4.setFont(f3);
-		v4.setBounds(200, 150 + 11, 20, 20);
+		v4.setBounds(180, 150 + 11, 20, 20);
 		add(v4);
 
 		v5 = new JLabel("5");
 		v5.setForeground(ylw);
 		v5.setFont(f3);
-		v5.setBounds(200, 142 + 10, 20, 20);
+		v5.setBounds(180, 142 + 10, 20, 20);
 		add(v5);
 
 		v6 = new JLabel("6");
 		v6.setForeground(ylw);
 		v6.setFont(f3);
-		v6.setBounds(200, 134 + 9, 20, 20);
+		v6.setBounds(180, 134 + 9, 20, 20);
 		add(v6);
 
 		v7 = new JLabel("7");
 		v7.setForeground(ylw);
 		v7.setFont(f3);
-		v7.setBounds(200, 126 + 8, 20, 20);
+		v7.setBounds(180, 126 + 8, 20, 20);
 		add(v7);
 
 		v8 = new JLabel("8");
 		v8.setForeground(ylw);
 		v8.setFont(f3);
-		v8.setBounds(200, 118 + 7, 20, 20);
+		v8.setBounds(180, 118 + 7, 20, 20);
 		add(v8);
 
 		v9 = new JLabel("9");
 		v9.setForeground(ylw);
 		v9.setFont(f3);
-		v9.setBounds(200, 110 + 6, 20, 20);
+		v9.setBounds(180, 110 + 6, 20, 20);
 		add(v9);
 
 		v10 = new JLabel("10");
 		v10.setForeground(ylw);
 		v10.setFont(f3);
-		v10.setBounds(200, 102 + 2, 20, 20);
+		v10.setBounds(180, 102 + 2, 20, 20);
 		add(v10);
 
 		// PLACEHOLDER
