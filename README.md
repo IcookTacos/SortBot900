@@ -10,7 +10,9 @@ A simple java super computer AI that will destroy the world with it's sorting al
  - Insertion sort
 
 ## TODO ## 
-- convquer the world
+Feel pretty much finished with the project so far. Could add more sorting algorithms and expand for larger array sizes since the 
+10 size array with range from 0 to 10 is pretty trivial. Could clean up the code *alot* since it's very ugly.
+
 
 ## COMMANDS ##
 - build
