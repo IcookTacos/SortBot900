@@ -1,6 +1,8 @@
 # SortBot900
 A simple java super computer AI that will destroy the world with it's sorting algortihms
-
+## VERSION 2.0
+![Alt text](https://i.imgur.com/5lj1637.png "Title")
+## VERSION 1.0
 ![Alt text](https://i.ibb.co/tcn0kFh/sortbot900-pic1.png "Title")
 
 
