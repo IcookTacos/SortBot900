@@ -8,12 +8,14 @@ A simple java super computer AI that will destroy the world with it's sorting al
  - Insertion sort
 
 ## TODO ## 
-- thread insertion sort
-- solve problem with a[i] being used to draw but not to sort
+- convquer the world
 
 ## COMMANDS ##
 - build
 opens the array builder, lets you input numbers from -1 to 10 and create an array of size 10
+
+-e
+enters the built array to the bot so it can be sorted
 
 -sort
 sorts the currently built array with insertion sort
