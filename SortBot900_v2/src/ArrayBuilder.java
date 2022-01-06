@@ -24,7 +24,7 @@ public class ArrayBuilder extends JFrame  {
 	Font f1 = new Font(Font.DIALOG_INPUT, Font.PLAIN, 11);
 	public ArrayBuilder() {
 		
-		// WINDOW CONFIGURATIONS
+		// Window Configurations
 		setTitle("ArrayBuilder");
 		setSize(200,75);
 		setLocationRelativeTo(null);
@@ -38,7 +38,7 @@ public class ArrayBuilder extends JFrame  {
 		contentPaneA.setLayout(null);
 		contentPaneA.setBackground(new Color(50,50,50));
 		
-		// LABELS
+		// Lables
 		elLbl = new JLabel("Element ->");
 		elLbl.setForeground(ylw);
 		elLbl.setFont(f1);
@@ -51,7 +51,7 @@ public class ArrayBuilder extends JFrame  {
 		arrLbl.setBounds(10,5,200,12);
 		add(arrLbl);
 		
-		// TEXTFIELD INPUT
+		// Textfield Input
 		txtInput = new JTextField("");
 		txtInput.setBorder(blackline);
 		txtInput.setForeground(ylw);
@@ -60,7 +60,7 @@ public class ArrayBuilder extends JFrame  {
 		txtInput.setFont(f1);
 		add(txtInput);
 		
-		// TEXTFIELD OUTPUT
+		// Textfield Output
 		txtOutput = new JTextArea("");
 		txtOutput.setForeground(new Color(230, 221, 91));
 		txtOutput.setBackground(new Color(50, 50, 50));
@@ -70,7 +70,7 @@ public class ArrayBuilder extends JFrame  {
 		add(txtOutput);
 		
 		
-		// ACTIONLISTNERS
+		// ActionListeners
 		txtInput.addActionListener((e) -> input());
 		
 	}
@@ -79,10 +79,7 @@ public class ArrayBuilder extends JFrame  {
 		String input = txtInput.getText();
 		txtInput.setText("");
 		String output = "";
-		//TODO: FIX THIS SHIT, DON'T BE SO STUPID
-		//TODO: om input = 10 8 2 3 9 8 1 1 0 -1
-		//TODO: STRING -> INT ARRAY[]
-		//TODO: a[10] = 10 8 2 3 9 8 1 1 0 -1
+		// Todo: Refactor this
 		if(input.equalsIgnoreCase("-1")) 	build(-1);
 		if(input.equalsIgnoreCase("0")) 	build(0);	
 		if(input.equalsIgnoreCase("1")) 	build(1);	
@@ -95,8 +92,7 @@ public class ArrayBuilder extends JFrame  {
 		if(input.equalsIgnoreCase("8")) 	build(8);	
 		if(input.equalsIgnoreCase("9")) 	build(9);	
 		if(input.equalsIgnoreCase("10"))	build(10);	
-		if(input.equalsIgnoreCase("e"))		{
-			
+		if(input.equalsIgnoreCase("e"))		{		
 			output = txtOutput.getText();
 			Window.outputTxt.append(output + "\n");
 			for(int i = 0; i<10;i++) {
@@ -105,9 +101,6 @@ public class ArrayBuilder extends JFrame  {
 			System.out.print("\n");
 			dispose();
 		}
-		
-
-	
 	}
 	
 	private void build(int value) {
@@ -115,8 +108,5 @@ public class ArrayBuilder extends JFrame  {
 		Window.a[seq]=value;
 		txtOutput.append(value + " ");
 		seq++;
-		
-		
 	}
-
 }
