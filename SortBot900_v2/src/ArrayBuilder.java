@@ -1,7 +1,5 @@
 import java.awt.Color;
 import java.awt.Font;
-
-
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -9,7 +7,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
-
 
 @SuppressWarnings("serial")
 public class ArrayBuilder extends JFrame  {
@@ -68,7 +65,6 @@ public class ArrayBuilder extends JFrame  {
 		txtOutput.setEditable(false);
 		txtOutput.setFont(f1);
 		add(txtOutput);
-		
 		
 		// ActionListeners
 		txtInput.addActionListener((e) -> input());
