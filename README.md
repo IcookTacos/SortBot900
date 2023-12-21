@@ -1,20 +1,9 @@
-# SortBot900
-A simple java sorting algorithm
-## VERSION 2.0
+## SortBot900
 ![Alt text](https://i.imgur.com/5lj1637.png "Title")
-## VERSION 1.0
-![Alt text](https://i.ibb.co/tcn0kFh/sortbot900-pic1.png "Title")
 
+A application to visualize sorting algorithms, written in Java. Made during my algorithm and datastructure studies in university. The goal was to have a generic frontend / backend architecture where the backend would hold a collection of different sorting algorithms and the frontend would be able to visualize the sorting. I guess my intressted died of after the first one since I only implemented a insertion sort in the backend.
 
-## Current algoritms ##
- - Insertion sort
-
-## TODO ## 
-Feel pretty much finished with the project so far. Could add more sorting algorithms and expand for larger array sizes since the 
-10 size array with range from 0 to 10 is pretty trivial. Could clean up the code *alot* since it's very ugly.
-
-
-## COMMANDS ##
+## Usage
 -build
 opens the array builder, lets you input numbers from -1 to 10 and create an array of size 10
 
